@@ -1,18 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World
-         </p>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+   render() {
+     var i=1;
+      return (
+         <div>
+           <h1>
+             {i===1 ? 'true' :'False'}
+           </h1>
+         </div>
+
+      );
+   }
 }
-
 export default App;
